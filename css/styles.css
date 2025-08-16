@@ -56,7 +56,7 @@ body {
 	margin: 40px 0 0;
 }
 
-.header-experience p+p {
+.header-experience li+li {
 	margin: 5px 0 0;
 }
 
