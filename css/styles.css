@@ -87,8 +87,11 @@ main .container > p {
 }
 
 /*FOOTER*/
+footer{
+	padding: 51px 0;
+}
+
 footer .container > p {
 	text-align: center;
-	padding: 51px 0;
 	color: #A3ABB2;
 }
