@@ -8,6 +8,7 @@ body {
 	font-size: 22px;
 	font-weight: 500;
 	line-height: 1.4;
+	font-size: 22px;
 }
 
 .container {
@@ -21,15 +22,35 @@ body {
 
 /* HEADER */
 .header {
-	text-align: center;
-	padding: 36px 0 82px;
+	padding: 36px 0 80px;
+}
+
+.header-icon {
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #171F26;
+}
+
+.header-icon>img {
+	padding: 20px;
+}
+
+.header-content {
+	width: 635px;
+	margin: 65px auto;
+}
+
+.header-photo, .header-title {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .header-photo {
 	background: red;
 	width: 215px;
 	height: 215px;
-	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden;
 	border: 6px solid #FFE071;
@@ -42,40 +63,116 @@ body {
 }
 
 .header-title {
-	margin: 30px 0 0;
-	/* font-weight: 500; */
+	margin-left: 40px;
+}
+
+.header-subtitle {
 	font-size: 46px;
 	color: #F1F2F4;
 }
 
-.header-title+p {
+.header-subtitle+p {
 	color: #A3ABB2;
 	margin: 10px 0 0;
 }
 
-.header-link, .header-experience {
-	margin: 40px 0 0;
+.social ul {
+	font-size: 0;
+	margin: 12px 0 0;
 }
 
-.header-experience li+li {
-	margin: 5px 0 0;
+.social ul>li {
+	display: inline-block;
+	font-size: 30px;
+	margin-right: 26px;
 }
 
+.social ul>li:last-child {
+	margin-right: 0;
+}
 
-.header-link>a {
-	color: #FFE482;
-	margin: 0 23px;
+.header-experience {
+	padding: 68px 0 48px;
+	text-align: center;
+	font-size: 0;
+}
+
+.header-experience>div {
+	display: inline-block;
+	width: 33%;
+	color: #A3ABB2;
+	font-size: 22px;
+}
+
+/* LINKS */
+.header-links {
+	font-size: 0;
+}
+
+.header-links a {
+	color: #222;
+	padding: 29px 20px;
+	background: #FFE071;
+	display: inline-block;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 22px;
+	width: 290px;
+}
+
+.header-links a:last-child,
+.header-links a:hover  {
+	background: #171F26;
+	color: #A3ABB2;
+}
+
+.header-links a:focus {
+	outline: 4px solid #fff;
+}
+
+.header-links a:last-child {
+	margin-left: 20px;
 }
 
 /*MAIN*/
+.portfolio {
+	padding: 20px 0 100px;
+}
+
+.portfolio h2 {
+	color: #A3ABB2;
+}
+
+.portfolio-cards {
+	font-size: 0;
+	margin: 30px 0 -15px;
+}
+
+.portfolio-card {
+	width: 33.333%;
+	height: 226px;
+	display: inline-block;
+	font-size: 22px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+.portfolio-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 section {
 	text-align: center;
-	padding: 22px 0 58px;
 }
 
 .yellow {
 	background: #FFE482;
 	color: #3D3D3D;
+	padding: 40px 0;
 }
 
 .container h2 {
@@ -83,7 +180,7 @@ section {
 	text-transform: uppercase;
 }
 
-main .container > p {
+main p {
 	margin: 30px 0 0;
 }
 
