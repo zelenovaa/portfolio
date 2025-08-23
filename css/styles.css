@@ -1,5 +1,13 @@
 @import url('reset.css');
 
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
 /* GLOBAL CLASSES */
 body {
 	font-family: "Poppins", sans-serif;
@@ -62,8 +70,13 @@ body {
 	object-fit: cover;
 }
 
+.header-info {
+	font-size: 0;
+}
+
 .header-title {
 	margin-left: 40px;
+	font-size: 22px;
 }
 
 .header-subtitle {
@@ -120,7 +133,6 @@ body {
 	width: 290px;
 }
 
-.header-links a:last-child,
 .header-links a:hover  {
 	background: #171F26;
 	color: #A3ABB2;
@@ -135,6 +147,7 @@ body {
 }
 
 /*MAIN*/
+
 .portfolio {
 	padding: 20px 0 100px;
 }
@@ -144,15 +157,13 @@ body {
 }
 
 .portfolio-cards {
-	font-size: 0;
 	margin: 30px 0 -15px;
 }
 
 .portfolio-card {
+	float: left;
 	width: 33.333%;
 	height: 226px;
-	display: inline-block;
-	font-size: 22px;
 	margin-bottom: 30px;
 	border-radius: 15px;
 	overflow: hidden;
